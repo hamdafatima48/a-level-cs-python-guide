@@ -20,18 +20,21 @@ class Character:
         self.__name = pname         # PRIVATE Name As STRING
         self.__XCoordinate = x      # PRIVATE XCoordinate As INTEGER
         self.__YCoordinate = y      # PRIVATE YCoordinate As INTEGER
+                                    # I wrote these PRIVATE lines because in Paper 4 Python solutions
+                                    # we are expected to show the private attributes and their data types like this.
 
+    
     def GetName(self):
         # This method returns the character's name.
         # Since the name is private, we use this method to access it outside the class.
         return self.__name
 
     def GetX(self):
-        # This method returns the X coordinate of the character.
+        # returns the X coordinate of the character.
         return self.__XCoordinate
 
     def GetY(self):
-        # This method returns the Y coordinate of the character.
+        # returns the Y coordinate of the character.
         return self.__YCoordinate
 
     def ChangePosition(self, Xchange, Ychange):
