@@ -1,7 +1,6 @@
 """
 Cambridge International AS & A Level Computer Science 9618
-Paper 4 Practical - October/November
-Paper: 42
+Paper 42 Practical - October/November
 Question: 2
 
 Short description:
