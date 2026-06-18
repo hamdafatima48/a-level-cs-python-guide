@@ -1,9 +1,7 @@
 """
 Cambridge International AS & A Level Computer Science 9618
-Paper 4 Practical - May/June 2024
-Paper: 41
+Paper 41 Practical - May/June 2024
 Question: 2
-Topic: Object-Oriented Programming
 
 Short description:
 This question is about storing tree data using a Tree class.
