@@ -11,13 +11,13 @@ Then it added a MagicCharacter subclass, where Learn() works differently dependi
 import datetime
 
 class Character:
-def__init__(self, cn, db, intel, spd):
-    self.__CharacterName = cn       # PRIVATE CharacterName: STRING
-    self.__DateOfBirth = db         # PRIVATE DateOfBirth: DATE
-    self.__Intelligence = intel     # PRIVATE Intelligence: REAL
-    self.__Speed = spd              # PRIVATE Speed : INTEGER
-# I wrote these PRIVATE lines because in Paper 4 Python solutions,
-# we are expected to show the private attributes and their data types like this.
+    def__init__(self, cn, db, intel, spd):
+        self.__CharacterName = cn       # PRIVATE CharacterName: STRING
+        self.__DateOfBirth = db         # PRIVATE DateOfBirth: DATE
+        self.__Intelligence = intel     # PRIVATE Intelligence: REAL
+        self.__Speed = spd              # PRIVATE Speed : INTEGER
+        # I wrote these PRIVATE lines because in Paper 4 Python solutions,
+        # we are expected to show the private attributes and their data types like this.
 
 def GetIntelligence(self):
     # Getter for intelligence because the attribute is private.
@@ -41,15 +41,15 @@ def ReturnAge(self):
 
 
 class MagicCharacter(Character):
-def__init__(self, cn, db, intel, spd, element):
-# Character is the superclass/parent class.
-# MagicCharacter is the subclass/child class, so it inherits the normal character details..
-    Character.__init__(self, cn, db, intel, spd)
-    # This is the extra attribute only for MagicCharacter.
-    self.__element = element                # PRIVATE element : STRING
+    def__init__(self, cn, db, intel, spd, element):
+    # Character is the superclass/parent class.
+    # MagicCharacter is the subclass/child class, so it inherits the normal character details..
+        Character.__init__(self, cn, db, intel, spd)
+        # This is the extra attribute only for MagicCharacter.
+        self.__element = element                # PRIVATE element : STRING
 
 def Learn(self):
-    # This Learn method overrides the Learn method from Character.
+    # This Learn method will override the Learn method from Character.
     # Magic characters increase intelligence differently depending on their element.
 
     if self.__element == "fire" or self.__element == "water":
@@ -79,7 +79,7 @@ print(name + " is " + age + " years old and has intelligence " + intelligence)
 
 # Creating a MagicCharacter object and test its own Learn method.
 
-FirstMagic = MagicCharacter("Light", datetime.datetime(2018, 3, 3), 75, 22, "fire")     # Magic character has all the normal Character attributes, plus the extra element attribute.
+FirstMagic = MagicCharacter("Light", datetime.datetime(2018, 3, 3), 75, 22, "fire")     # Magic character has all the normal character attributes &the extra element attribute.
 FirstMagic.Learn()               ## Since the element is fire, intelligence increases by 20%.
 
 name2 = FirstMagic.GetName()
