@@ -169,11 +169,11 @@ while choice != "6":
     if choice == '1':
         # adding some names to test the linked list
         # the add_node function will place them in sorted order
-        add_node("Kashif")
-        add_node("Basit")
+        add_node("harry")
+        add_node("ben")
         add_node("Rania")
         add_node("Absar")
-        add_node("Faraz")
+        add_node("Fatima")
 
     elif choice == '2':
         print_all()  # prints the current linked list from start_ptr onwards
